@@ -51,7 +51,7 @@ const team = [
   ];
 
 
-/* let qui = document.getElementById("qui") */
+JSON.stringify(team);
 
 for(let oggettiTeam in team){
     console.log(team[oggettiTeam]) 
@@ -59,7 +59,7 @@ for(let oggettiTeam in team){
 
 for(i = 0; i <team.length; i++){
      
-    document.getElementById("qui").innerHTML=team[0].nome
+    document.getElementById("qui").innerHTML=team[i].name
 }
 
 
