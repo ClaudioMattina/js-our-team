@@ -58,7 +58,7 @@ for(let oggettiTeam in team){
 }
 
 for(i = 0; i <team.length; i++){
-    qui.innerHTML=team[0].nome
+    qui.innerHTML=team[0][nome]
 }
 
 
