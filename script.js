@@ -13,7 +13,7 @@ organizzare i singoli membri in card/schede */
 
 
 
-
+let myImg=["img/01.jpg , img/02.jpg , img/03.jpg , img/04.jpg"]
 
 /* ARRAY DI OGGETTI DATI DALL'ESERCIZIO */
 
@@ -50,27 +50,25 @@ const team = [
     },
   ];
 
-/* let scheda =document.getElementById("my-scheda") */
-/* JSON.stringify(team); */
+
     
     for(let oggettiTeam in team){
         console.log(team[oggettiTeam]) 
         
     }
 
-    /* for(let oggettiTeam in team){
-        document.getElementById("name").innerHTML=team[0].name
-        document.getElementById("role").innerHTML=team[0].role
-        document.getElementById("my-img").innerHTML=team[0].image
+  
 
-    } */
+    
+
+    
 
     for(i = 0; i < team.length; i++){
 
         /* creo un contenitore di tipo div */
         let scheda = document.createElement("div")
         /* gli aggiungo le varie calssi */
-        scheda.classList.add("col-4", "my-scheda", "m-2")
+        scheda.classList.add("col-4", "my-scheda", "m-2","flex-column")
         /* dico alla row nell'hatml di comprendere la scheda che ho screato (il div che ho creato) */
         document.getElementById("ciccio").appendChild(scheda)
         /* creo un h2 che farà da titolo per il nome */
@@ -91,12 +89,40 @@ const team = [
         /* GLI DO IL VALORE IL VALORE ROLE CONTRASSEGNATO COME "I" NELL'ARRAY TEAM */
         paragrafoRole.innerHTML=team[i].role
 
+
+        let oggettoImage = document.createElement("p")
+        scheda.appendChild(oggettoImage)
+        oggettoImage.innerHTML=team[i].image
+
+
+
+
+        /* let imgContainer=document.createElement("div")
+        imgContainer.classList.add("my-img-container")
+        scheda.appendChild(imgContainer) */
+
+        /* creato elemento img */
+        /* let imgImage=document.createElement("img") */
+        /* inserito elemento img nel contenitore "imgContainer" che a sua volta è inserito nel div "scheda" */
+        /* imgContainer.appendChild(imgImage) */
+
+
+        /* ciclo che scrive nel imgContainer.... per aggiungere le immagini contenute nell'array */
+
+        /* for(k = 0; k < myImg.length; k++){
+            
+            imgContainer.innerHTML+=`<img class="my-img" src="${myImg[k]}" alt="">`
+            
+        
+        } */
+
+        
+        
+        
         
     }
 
-
-
-
+    
 
 
 

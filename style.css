@@ -5,5 +5,15 @@
 
 .my-title{
     color: white;
+    
+}
+
+.my-img-container{
+    width: 100%;
+    height: 100%;
+}
+
+.my-img{
+    width: 100%;
 }
 
