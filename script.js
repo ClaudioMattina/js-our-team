@@ -51,8 +51,13 @@ const team = [
   ];
 
 
-  
+let qui = document.getElementById("qui")
+
 for(let oggettiTeam in team){
-        console.log(team[oggettiTeam])
+    console.log(team[oggettiTeam]) 
+}
+
+for(i = 0; i <team.length; i++){
+    qui.innerHTML=team[i]
 }
  
