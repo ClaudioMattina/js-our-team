@@ -58,7 +58,9 @@ for(let oggettiTeam in team){
 }
 
 for(i = 0; i <team.length; i++){
-    qui.innerHTML=team[0][nome]
+    
+    let stringa = JSON.stringify(team[i])
+    qui.innerHTML=team[i].nome
 }
 
 
