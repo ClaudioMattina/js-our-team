@@ -51,16 +51,15 @@ const team = [
   ];
 
 
-let qui = document.getElementById("qui")
+/* let qui = document.getElementById("qui") */
 
 for(let oggettiTeam in team){
     console.log(team[oggettiTeam]) 
 }
 
 for(i = 0; i <team.length; i++){
-    
-    let stringa = JSON.stringify(team[i])
-    qui.innerHTML=team[i].nome
+     
+    document.getElementById("qui").innerHTML=team[0].nome
 }
 
 
