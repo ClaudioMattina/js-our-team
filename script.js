@@ -58,6 +58,8 @@ for(let oggettiTeam in team){
 }
 
 for(i = 0; i <team.length; i++){
-    qui.innerHTML=team[i]
+    qui.innerHTML=team[0].nome
 }
- 
+
+
+console.log(team[0].name,team[0].role)
